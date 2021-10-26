@@ -2,25 +2,37 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"io/ioutil"
 	"log"
+	"math/rand"
 	"net/http"
+	"net/http/httptest"
 	"strings"
 	"time"
 )
 
 func main() {
+	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		log.Printf("Server >> Request received...[%s] %s", r.Method, r.RequestURI)
+		rnd := rand.New(rand.NewSource(time.Now().UnixNano()))
+		time.Sleep(time.Duration(rnd.Intn(60)) * time.Second) // Simulate a slow server
+		msg := "Hello Gopher!"
+		log.Printf("Server >> Sending %q", msg)
+		fmt.Fprintln(w, msg)
+	}))
+	defer ts.Close()
+
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
-	url := "http://localhost:8080"
-	req, _ := http.NewRequest(http.MethodGet, url, nil)
+	req, _ := http.NewRequest(http.MethodGet, ts.URL, nil)
 	req = req.WithContext(ctx)
 
 	t := time.Now()
 	log.Println("Sending request...")
 
-	log.Printf("Client >> Making request to test server: %s", url)
+	log.Printf("Client >> Making request to test server: %s", ts.URL)
 	r, err := http.DefaultClient.Do(req)
 	if err != nil {
 		log.Printf("Client >> Error: %s", err)

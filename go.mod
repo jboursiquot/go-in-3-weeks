@@ -1,0 +1,12 @@
+module github.com/jboursiquot/go-in-3-weeks
+
+go 1.17
+
+require (
+	github.com/gorilla/mux v1.7.4
+	github.com/jboursiquot/go-next-steps v0.0.0-20200716135047-b74c5c0e9381
+	github.com/jboursiquot/go-proverbs v0.0.2
+	github.com/jboursiquot/stringutils v0.0.0-20200521133053-e946c1138532
+	golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a
+	golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac
+)

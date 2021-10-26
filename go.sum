@@ -1,0 +1,12 @@
+github.com/gorilla/mux v1.7.4 h1:VuZ8uybHlWmqV03+zRzdwKL4tUnIp1MAQtp1mIFE1bc=
+github.com/gorilla/mux v1.7.4/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/jboursiquot/go-next-steps v0.0.0-20200716135047-b74c5c0e9381 h1:csAl4GjjPl88RExPX4HPlSMMmTRxaX95C2QhPSKyBXE=
+github.com/jboursiquot/go-next-steps v0.0.0-20200716135047-b74c5c0e9381/go.mod h1:Ey1wi/GMtGlSZKb9TkuPf19xv4Siex5vGV8VNGrxyVI=
+github.com/jboursiquot/go-proverbs v0.0.2 h1:LlJpbPfW6+HThOwZR+VsJwpRQL6xHOLsWjXJSZV2N40=
+github.com/jboursiquot/go-proverbs v0.0.2/go.mod h1:Fkb7X/GdAApOZjs+v4eREbG/UnzgHiLOLq7RbkKUf3U=
+github.com/jboursiquot/stringutils v0.0.0-20200521133053-e946c1138532 h1:/qihHi1/+jIKOrevypuZjeyjUbSYY5Y1Dl59gCk89zo=
+github.com/jboursiquot/stringutils v0.0.0-20200521133053-e946c1138532/go.mod h1:uNnl6RENFI2saDKeZqsWG3HHUh7nz2DOGwc7KeXr7zw=
+golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a h1:WXEvlFVvvGxCJLG6REjsT03iWnKLEWinaScsxF2Vm2o=
+golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
+golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac h1:7zkz7BUtwNFFqcowJ+RIgu2MaV/MapERkDIy+mwPyjs=
+golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac/go.mod h1:tRJNPiyCQ0inRvYxbN9jk5I+vvW/OXSQhTDSoE431IQ=

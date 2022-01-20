@@ -28,7 +28,8 @@ Don't panic.`
 func main() {
 	lines := strings.Split(proverbs, "\n")
 	for i, l := range lines {
+		c := i + 1
 		wc := len(strings.Fields(l))
-		fmt.Printf("%d. %s (WC: %d)\n", i, l, wc)
+		fmt.Printf("%d. %s (WC: %d)\n", c, l, wc)
 	}
 }

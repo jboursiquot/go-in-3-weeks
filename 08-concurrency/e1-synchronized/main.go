@@ -15,8 +15,8 @@ var toPort string
 
 func init() {
 	flag.StringVar(&host, "host", "127.0.0.1", "Host to scan.")
-	flag.StringVar(&fromPort, "from", "8080", "Port to start scanning from")
-	flag.StringVar(&toPort, "to", "8090", "Port at which to stop scanning")
+	flag.StringVar(&fromPort, "from", "5300", "Port to start scanning from")
+	flag.StringVar(&toPort, "to", "5500", "Port at which to stop scanning")
 }
 
 func main() {

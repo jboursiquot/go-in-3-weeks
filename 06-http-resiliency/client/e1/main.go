@@ -26,8 +26,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
 	defer cancel()
 
-	req, _ := http.NewRequest(http.MethodGet, ts.URL, nil)
-	req = req.WithContext(ctx)
+	req, _ := http.NewRequestWithContext(ctx, http.MethodGet, ts.URL, nil)
 
 	t := time.Now()
 	log.Println("Sending request...")

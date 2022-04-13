@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"strings"
 )
@@ -19,7 +18,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	bs, err := ioutil.ReadFile(path)
+	// bs, err := ioutil.ReadFile(path) // deprecated
+	bs, err := os.ReadFile(path)
 	if err != nil {
 		fmt.Printf("Failed to read file: %s", err)
 		os.Exit(1)

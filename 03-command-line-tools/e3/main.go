@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"strings"
 )
@@ -47,7 +46,7 @@ func pathFromEnv() string {
 func loadProverbs(path string) ([]*proverb, error) {
 	var proverbs []*proverb
 
-	bs, err := ioutil.ReadFile(path)
+	bs, err := os.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}

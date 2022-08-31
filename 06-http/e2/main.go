@@ -11,5 +11,6 @@ func main() {
 		fmt.Fprintf(w, "Greetings!")
 	})
 
+	log.Println("Listening on http://localhost:8080")
 	log.Fatal(http.ListenAndServe("127.0.0.1:8080", h))
 }

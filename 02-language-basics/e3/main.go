@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strings"
 )
 
 func main() {
-	bs, err := ioutil.ReadFile("proverbs.txt")
+	bs, err := os.ReadFile("proverbs.txt")
 	if err != nil {
 		panic(fmt.Errorf("failed to read file: %s", err))
 	}

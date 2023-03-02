@@ -24,12 +24,12 @@ func main() {
 	}
 	log.Printf("Summary (no retry/backoff):  Success: %d, Throttled: %d", successCount, throttledCount)
 
-	successCount, throttledCount, err = getWithBackoff(url, requestCount)
-	if err != nil {
-		log.Println(err)
-		os.Exit(1)
-	}
-	log.Printf("Summary (with retry/backoff):  Success: %d, Throttled: %d", successCount, throttledCount)
+	// successCount, throttledCount, err = getWithBackoff(url, requestCount)
+	// if err != nil {
+	// 	log.Println(err)
+	// 	os.Exit(1)
+	// }
+	// log.Printf("Summary (with retry/backoff):  Success: %d, Throttled: %d", successCount, throttledCount)
 
 }
 

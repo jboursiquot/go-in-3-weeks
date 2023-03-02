@@ -22,7 +22,6 @@ func greetHandler(w http.ResponseWriter, r *http.Request) {
 		case <-ctx.Done():
 			err := ctx.Err()
 			log.Printf("Context Error: %s", err.Error())
-			http.Error(w, err.Error(), http.StatusRequestTimeout)
 			return
 		default:
 			time.Sleep(1 * time.Second)

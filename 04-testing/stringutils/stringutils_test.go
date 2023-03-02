@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/jboursiquot/go-next-steps/04-testing/stringutils"
+	"github.com/jboursiquot/go-in-3-weeks/04-testing/stringutils"
 )
 
 // Exercise 1 solution

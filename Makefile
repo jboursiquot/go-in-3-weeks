@@ -12,3 +12,6 @@ language-basics-e2: ## run language-basics-e2
 
 language-basics-e3: ## run language-basics-e3
 	@cd ./02-language-basics/e3 && go run *.go
+
+language-basics-e4: ## run language-basics-e4
+	@cd ./02-language-basics/e4 && go run *.go

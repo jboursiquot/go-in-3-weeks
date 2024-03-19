@@ -13,7 +13,6 @@ func main() {
 	}
 
 	path := os.Args[1]
-	// bs, err := ioutil.ReadFile(path) // deprecated
 	bs, err := os.ReadFile(path)
 	if err != nil {
 		fmt.Printf("Failed to read file: %s", err)
@@ -32,7 +31,7 @@ func main() {
 }
 
 func charCount(line string) map[rune]int { // notice anything different here from previous exercises?
-	m := make(map[rune]int, 0)
+	m := make(map[rune]int, 0) // rune is similar to int32 data type but is used for character values vs integer
 	for _, c := range line {
 		m[c] = m[c] + 1
 	}

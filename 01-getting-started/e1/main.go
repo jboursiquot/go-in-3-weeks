@@ -12,8 +12,8 @@ var name string
 
 func main() {
 	name = "Johnny"
-	from := `Haiti`
-	var n int = 2
+	from := `Haiti` // := declare and assign, compiler auto-detects type
+	var n = 2       // no need to mention data type when assigning, compiler auto-detects
 
 	var proverb = "Undefined"
 	if p, err := proverbs.Nth(4); err == nil {

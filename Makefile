@@ -49,3 +49,9 @@ command-line-tools-e3.1: ## run command-line-tools-e3.1
 .PHONY: command-line-tools-e3.2
 command-line-tools-e3.2: ## run command-line-tools-e3.2
 	go run ./03-command-line-tools/e3.2/*.go
+
+interfaces-e1: ## run interfaces-e1
+	go run ./05-interfaces/e1/*.go
+
+interfaces-e2: ## run interfaces-e2
+	go test -v ./05-interfaces/e2/...

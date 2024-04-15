@@ -55,3 +55,15 @@ interfaces-e1: ## run interfaces-e1
 
 interfaces-e2: ## run interfaces-e2
 	go test -v ./05-interfaces/e2/...
+
+http-e1: ## run http-e1
+	go run ./06-http/e1/*.go
+
+http-e2: ## run http-e2
+	go run ./06-http/e2/*.go
+
+http-e3: ## run http-e3
+	go run ./06-http/e3/*.go
+
+http-e4: ## run http-e4
+	go test -v ./06-http/e4/...
